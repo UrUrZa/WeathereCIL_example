@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "CIL for getting weather",
+  "main": "index.js",
+  "bin": "/.indexs.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cil",
+    "weather"
+  ],
+  "author": "Iurii Za",
+  "license": "ISC",
+  "homepage": "https://purpeleschool.ru",
+  "repository": {
+    "type": "git",
+    "url": "https://purpeleschool.ru"
+  },
+"bugs": {
+  "url": "https://purpeleschool.ru",
+  "email": "purpeleschool@mail.ru"
+}
+}
