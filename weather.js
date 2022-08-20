@@ -1,10 +1,9 @@
-#!/ust/bin/env node
-import { getArgs } from './helpers/args'; 
+#!/ust/bin/env node --experimental-specifier-resolution=node
+import { getArgs } from "./helpers/args.js"; 
 
 const initCLI = () => {
     const args = getArgs(process.argv)
     console.log(args);
-    console.log('somebady');
 };
 
 initCLI();
