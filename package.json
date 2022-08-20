@@ -1,15 +1,18 @@
 {
-  "name": "demo",
+  "name": "weather_cli_example",
   "version": "1.0.0",
-  "description": "CIL for getting weather",
-  "main": "index.js",
-  "bin": "/.indexs.js",
+  "description": "CLI for getting weather",
+  "main": "weather.js",
+  "bin": {
+    "weather":"weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "cil",
+    "cli",
     "weather"
   ],
   "author": "Iurii Za",
@@ -22,5 +25,8 @@
 "bugs": {
   "url": "https://purpeleschool.ru",
   "email": "purpeleschool@mail.ru"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
 }
 }
