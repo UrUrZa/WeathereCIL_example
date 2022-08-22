@@ -22,11 +22,15 @@ const printHelp = () =>{
 
 const printWeather = (res) =>{
     console.log(
-        dedent`${chalk.bgYellow(' WEATHER ')} Погода в городе ${res.name}
+        dedent`
+        
+        ${chalk.bgYellow(' WEATHER ')} Погода в городе ${res.name}
         ${res.weather[0].description}
         Теипература: ${res.main.temp} (ощущается как ${res.main.feels_like})
         Влажность: ${res.main.humidity}%
         Скорость ветра: ${res.wind.speed}
+
+        
         `
         );
 }

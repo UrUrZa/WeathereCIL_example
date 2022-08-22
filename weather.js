@@ -35,8 +35,8 @@ const saveCity = async (city) =>{
 
 const getForcast = async() =>{
     try{
-        const city = getKeyValue(TOKEN_DICTIONARY.city);
-        const weather = await getWeather(city);
+        const currentCity = await getKeyValue(TOKEN_DICTIONARY.city);
+        const weather = await getWeather(currentCity);
         printWeather(weather);
         } catch (e) {
             if (e?.response?.status == 404){
