@@ -1,7 +1,7 @@
 #!/ust/bin/env node --experimental-specifier-resolution=node
 import { getArgs } from "./helpers/args.js"; 
 import { printHelp, printSuccess, printError } from "./services/log.servis.js";
-import { saveKeyValue } from "./services/storage.servis.js";
+import { saveKeyValue, getKeyValue } from "./services/storage.servis.js";
 
 const saveToken = async (token) =>{
     try {

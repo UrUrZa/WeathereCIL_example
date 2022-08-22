@@ -19,6 +19,7 @@ const getKeyValue = async(key) =>{
     if(await isEXist(filePath)){
         const file = await promises.readFile(filePath);
         const data = JSON.parse(file);
+        return data[key];
     } else{
     return undefined;
     }
