@@ -1,18 +1,22 @@
 import {homedir} from 'os'
 import {join} from 'path'
-import {promises} from 'fs'
+import { promises } from 'fs'
 
 const filePath = join(homedir(), 'weather-data.json');
+
 
 const saveKeyValue = async (key, value) =>{
     let data = {};
     if(await isEXist(filePath)){
         const file = await promises.readFile(filePath);
         data = JSON.parse(file);
-    } else{
+        console.log('файл существует и прочитан');
+    } else {
+        console.log('файл не существует');
+    }
     data[key] = value;
     await promises.writeFile(filePath, JSON.stringify(data));
-    }
+    
 };
 
 const getKeyValue = async(key) =>{
